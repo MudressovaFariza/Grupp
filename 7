@@ -1,0 +1,4 @@
+Select n_group, AVG(score) as count_score
+from students
+group by n_group
+having avg(score) <= 3.5
