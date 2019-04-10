@@ -1,0 +1,3 @@
+Select to_char (d_birth, 'YYYY'), Count(d_birth) as count_d_birth
+from students
+group by to_char (d_birth, 'YYYY')
