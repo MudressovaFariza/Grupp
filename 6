@@ -1,0 +1,4 @@
+Select n_group, Max(score) as count_score
+from students
+where n_group like '2___'
+group by n_group FETCH FIRST 1 ROWS ONLY 
