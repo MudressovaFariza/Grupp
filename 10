@@ -1,0 +1,5 @@
+Select name, surname, score, n_group
+from students s
+where score >
+(select AVG(score) from students ss
+where s.n_group=2221);
